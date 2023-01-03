@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;600;700;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;    
+}
+
+body {
+    background-color: var(--black);
+    color: var(--text);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* root colors */
+:root {
+--black: #000000;
+--text: #D9D9D9;
+--blue: #1D9BF0;
+--hover: #161616;
+--grey: #6E767D;
+--border-color: #2F3336;
+--trends-color: #202327;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+main{
+    display: flex;
+    padding: 0 5%;
+}
+
+.logo {
+    padding: 3%;
+}
+
+.menu {
+    width: 20%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    height: 96vh;
+    justify-content: space-between;
+}
+
+.menu a {
+    font-size: 1.19rem;
+    font-weight: 600;
+}
+
+.nav-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    cursor: pointer;
+    width: fit-content;
+    padding: 3% 15% 3% 5%;
+    border-radius: 2rem;
+}
+
+.nav-2:hover {
+    background-color: var(--hover);
+}
+
+.tweet-btn {
+    background-color: var(--blue);
+    color: var(--text);
+    margin: 3%;
+    padding: 6%;
+    width: 90%;
+    font-size: 1.06rem;
+    font-weight: 700;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.profile {
+    justify-self: flex-end;
+
+    display: flex;
+    gap: 5%;
+
+    padding: 5%;
+    border-radius: 2rem;
+
+    cursor: pointer;
+}
+
+.profile:hover {
+    background-color: var(--hover);
+}
+
+.cont {
+    font-weight: 700;
+}
+
+.profile img {
+    height: 2.5rem;
+    width: 2.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 0.94rem;
+    font-weight: 700;
+}
+
+.username {
+    font-size: 0.94rem;
+    font-weight: 600;
+    color: var(--grey);
+}
+
+/* .menu a:nth-child(1) {
+    font-weight: 800;
+} */
+
+
+
+.feeds {
+    width: 50%;
+    /* background-color: aquamarine; */
+    /* border: 0 2px 0 2px solid var(--border-color); */
+    border-left: 0.06rem solid var(--border-color);
+    border-right: 0.06em solid var(--border-color);
+}
+
+.trending {
+    width: 30%;
+    /* background-color: blue; */
+}
