@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
 
 
 * {
@@ -45,6 +45,8 @@ main{
     flex-direction: column;
     height: 96vh;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
 }
 
 .menu a {
@@ -55,12 +57,15 @@ main{
 .nav-2 {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 1rem;
     cursor: pointer;
     width: fit-content;
     padding: 3% 15% 3% 5%;
     border-radius: 2rem;
+}
+
+.nav-2:nth-child(1) a {
+    font-weight: 900;
 }
 
 .nav-2:hover {
@@ -80,12 +85,13 @@ main{
 }
 
 .profile {
-    justify-self: flex-end;
+    /* width: 95%; */
+    /* justify-self: flex-end; */
 
     display: flex;
-    gap: 5%;
+    gap: 3%;
 
-    padding: 5%;
+    padding: 3%;
     border-radius: 2rem;
 
     cursor: pointer;
@@ -97,6 +103,8 @@ main{
 
 .cont {
     font-weight: 700;
+    justify-self: flex-end;
+    align-self: center;
 }
 
 .profile img {
@@ -107,12 +115,12 @@ main{
 }
 
 .name {
-    font-size: 0.94rem;
+    font-size: 0.9rem;
     font-weight: 700;
 }
 
 .username {
-    font-size: 0.94rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: var(--grey);
 }
@@ -133,5 +141,138 @@ main{
 
 .trending {
     width: 30%;
-    /* background-color: blue; */
+    padding: 1%;
+}
+
+.t-for-you {
+    background-color: var(--trends-color);
+    border-radius: 1rem;
+    margin: 1rem 0;
+    /* padding: 3%; */
+}
+
+.t-for-you img {
+    cursor: pointer;
+}
+
+.t-for-you .head {
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 2rem 3% 3%;
+}
+
+.t-for-you h1 {
+    font-size: 1.19rem;
+    font-weight: 600;
+}
+
+.t-for-you .trend-comp {
+    padding: 3%;
+    margin: 1% 0;
+}
+
+.trend-comp {
+    cursor: pointer;
+}
+
+.trend-comp:hover {
+    background-color: var(--border-color);
+}
+
+.trend-loc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    font-size: 0.81rem;
+    color: var(--grey);
+}
+
+.trend-loc p:nth-child(2) {
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+/* .trend-loc p:nth-child(2):hover {
+    background-color: var(--trends-color);
+    border-radius: 25px;
+} */
+
+.trend-loc-2 {
+    align-items: center;
+    font-weight: 400;
+    font-size: 0.81rem;
+    color: var(--grey);
+}
+
+.trend-comp h2 {
+    font-size: calc(1rem - 0.06rem);
+    margin: 0.13rem 0;
+}
+
+.t-for-you .footer {
+    padding: 3%;
+    color: var(--blue);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    cursor: pointer;
+}
+
+.t-for-you .footer:hover {
+    background-color: var(--border-color);
+}
+
+.w-profile {
+    
+    padding: 3%;
+    display: flex;
+    /* width: 1000px; */
+    justify-content: flex-start;
+    gap: 3%;
+    cursor: pointer;
+    align-items: center;
+}
+
+.w-profile:hover {
+    background-color: var(--border-color);
+}
+
+.w-profile>img {
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.w-profile .w-btn {
+    /* align-self: center; */
+    justify-self: flex-end;
+}
+
+.follow-btn {
+    font-size: 0.87rem;
+    font-weight: 400;
+    color: var(--hover);
+    padding: .5rem 1rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+.w-name {
+    display: flex;
+    align-items: center;
+    gap: 0.19rem;
+    font-size: 0.94;
+    font-weight: 400;
+
+}
+
+.w-name:hover {
+    text-decoration: underline;
+}
+
+.w-username {
+    font-size: 0.94rem;
+    font-weight: 300;
+    color: var(--grey);
 }
